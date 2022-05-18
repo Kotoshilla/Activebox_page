@@ -1,0 +1,435 @@
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #6c7279;
+}
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+h1, h2 , h3, h4, h5, h6{
+    margin: 0;
+}
+
+*{
+    margin: 0 0;
+}
+
+/*container=========
+=========================*/
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/*Header
+=========================*/
+
+.header{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 0;
+    border-bottom: 1px solid #515369;
+    
+}
+
+
+/* Nav
+===================*/
+
+.nav{
+    display: flex;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+.nav_link{
+    
+    margin-left: 50px;
+    color: white;
+    text-decoration: none;
+    opacity: 0.75;
+    transition: opacity 0.1 linear;
+}
+.nav_link:first-child{
+    margin-left: 0;
+}
+
+.nav_link:hover{
+    
+    opacity: 1;
+}
+
+
+/*intro
+======================*/
+
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 750px;
+    padding-top: 100px;
+    background: #31344e url("../img/intro-bg.jpg") center no-repeat;
+}
+.intro_inner{
+    top: 150px; width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.intro_title{
+    margin: 0 0 30px;
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 65px;
+    line-height: 1.1;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    
+
+}
+.intro_subtitle{
+    margin-bottom: 60px;
+    font-size: 22px;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 400;
+
+}
+
+/* button
+=================*/
+
+.btn{
+    display: inline-block;
+    vertical-align: top;
+    padding: 14px 40px;
+    border-radius: 2px;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 13px;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.1s linear;
+
+}
+
+.btn--red{
+    background-color: #e84545;
+    
+}
+
+.btn--red:hover{
+    background-color: rgb(196, 16, 16);
+}
+
+/*features
+=========*/
+
+.features{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 95px 0;
+}
+
+.features_item{
+    width: 33.33333%;
+    padding: 0 40px;
+    margin: 25px 0;
+    text-align: center;
+}
+
+.features_icon{
+    margin-bottom: 25px;
+    
+}
+
+.features_title{
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #2d3033;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
+
+.features_text{
+    font-size: 14px;
+    line-height: 1.5;
+    color: #6c7279;
+}
+
+
+/* works
+===================== */
+
+.works{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.works_item{
+    max-width: 25%;
+    height: 350px;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    position: relative;
+    overflow: hidden;
+
+}
+.works_item:hover .works_content{
+    opacity: 1;
+}
+
+.works_photo{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate3d(-50%, -50%, 0);
+
+}
+
+.works_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(232, 69, 69, 0.9);
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: opacity .2s linear;
+}
+
+.works_title{
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+.works_text{
+    font-size: 14px;
+    color: #fff;
+}
+
+/* team
+================= */
+
+.team{
+    margin: 100px 0 70px;
+}
+.team_inner{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.team_item{
+    width: 25%;
+    padding:0 15px;
+    margin-bottom: 30px;
+}
+
+.team_photo{ 
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.team_name{
+    margin-bottom: 8px;
+    font-size: 22px;
+    color: #2d3033;
+}
+
+.team_prof{
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: #e84545;
+    text-transform: uppercase;
+
+}
+
+.team_text{
+    font-size: 14px;
+    line-height: 1.5;
+    color: #6c7279;
+    margin-bottom: 20px;
+
+}
+
+/* Social
+====================== */
+
+.social{
+    display: flex;
+
+}
+
+.social_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 4px;
+    border: 1px solid #e8ecee;
+    transition: .2s;
+}
+
+.social_item:hover{
+    background: rgb(247, 247, 247);
+    transition: .2s;
+}
+  /* reviews
+  =================== */
+
+
+.reviews{
+    overflow: hidden;
+    background-color: #53354a;
+}
+
+.reviews_item{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.reviews_photo{
+    width: 50%;
+    height: 500px;
+    position: relative;
+}
+
+.reviews_img{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+    
+    transform: translateY(-50%);
+}
+
+.reviews_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding-left: 80px;
+    
+}
+
+.reviews_text{
+    margin-bottom: 25px;
+    font-family: 'Cardo', sans-serif;
+    font-size: 36px;
+    font-style: italic;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.reviews_author{
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+/* download
+============== */
+
+.download{
+    margin:90px 0;
+    text-align: center;
+}
+
+.download_title{
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: black;
+    font-weight: 300;
+}
+
+.download_text{
+    font-size: 13px;
+    color: #2d3033;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.btn--red{
+    margin-top: 30px;
+}
+
+/* footer========
+================== */
+
+.footer{
+    padding: 70px 0;
+    background-color: #3a3e64;
+
+}
+
+.footer_inner{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer_block{
+    width: 33.33333%;
+    text-align: center;
+}
+
+.footer_title{
+    margin-bottom: 10px;
+    font-size: 14;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+}
+
+.footer_address{
+    font-size: 14px;
+    line-height: 1.5;
+    font-style: normal;
+    color: rgba(255, 255,255, 0.5);
+}
